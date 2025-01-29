@@ -1,0 +1,65 @@
+@import url('./core_style.css');
+@import url('./card_style.css');
+
+
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: var(--nav-clearence);
+}
+
+
+.navbar {
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--nav-height);
+    background-color: var(--body-background);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    gap: 14rem;
+}
+
+.navbar-items {
+    display: inline-flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+
+.navbar-items li a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+    font-size: 1.2rem;
+}
+
+.navbar-items li a:hover {
+    color: white;
+    border-bottom: solid 2.1px;
+    border-color: white;
+}
+
+
+.svg-logo .logo {
+    fill: var(--logo-color);
+}
+
+.svg-logo .logo:hover {
+    fill: var(--nav-text-color)
+}
+
+.title {
+    color: var(--text-primary-color);
+    font-size: 2rem;
+}
+
+.sample-text {
+    color: var(--txt-general-p-color);
+}
+
+

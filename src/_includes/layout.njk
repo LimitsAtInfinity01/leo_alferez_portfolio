@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <title>{{ Home }}</title>
+</head>
+<body>
+
+
+        <nav class="navbar">
+            <svg class="svg-logo" width="225" height="100" xmlns="http://www.w3.org/2000/svg">
+    
+                <!-- Initials -->
+                <a href="">
+                    <text class="logo" x="50%" y="50%" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333" text-anchor="middle" dominant-baseline="middle">
+                        <!-- &lt; Leo Alferez &gt; -->
+                        { Leo Alferez }
+                    </text>
+                </a>
+              </svg>
+              
+            <ul class="navbar-items">
+                <li><a class="navbar-links" href="#">Home</a></li>
+                <li><a class="navbar-links" href="#">About me</a></li>
+                <li><a class="navbar-links" href="#">Projects</a></li>
+                <li><a class="navbar-links" href="#">Experience</a></li>
+                <li><a class="navbar-links" href="#">Resume</a></li>
+            </ul>
+        </nav>
+
+
+
+    {{ content | safe }}
+
+</body>
+</html>

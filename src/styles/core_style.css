@@ -1,0 +1,35 @@
+:root {
+    /* Here set up the color variables
+    primary color, textcolor, border-color */
+    --logo-color: #FF5161;
+    --neon-red-glow: #D30302;
+    --nav-text-color: #2dd9fe;
+    --neon-blue-glow: #00a3d5;
+
+
+    /* --body-background: #050816; */
+    --body-background: #080d23;
+    --card-background: #12315a;
+    --element-background: #2dd9fe;
+
+    --text-primary-color: #ffdb4e;
+    --txt-secundary-color: #030941;
+    --txt-general-p-color: #ffffffe3;
+
+    --nav-height: 75px;
+    --nav-clearence: 50px
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-background);
+    padding-top: var(--nav-height);
+}
+
+html {
+    font-size: 18px;
+}
