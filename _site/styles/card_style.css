@@ -15,7 +15,11 @@
     box-shadow: 0 0 12px 2px #00a3d5;
 }
 
-.card-image_kitty {
+.card-image-bookish {
+    background-image: url(/assets/bookish.png);
+}
+
+.card-image-kitty {
     background-image: url(/assets/kitty.jpg);
 }
 

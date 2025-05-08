@@ -6,20 +6,32 @@
     --nav-text-color: #2dd9fe;
     --neon-blue-glow: #00a3d5;
 
-
     /* --body-background: #050816; */
-    --body-background: #080d23;
+    --body-background: rgb(15 23 42);
     --card-background: #12315a;
     --element-background: #2dd9fe;
 
     --text-primary-color: #ffdb4e;
     --txt-secundary-color: #030941;
-    --txt-general-p-color: #ffffffe3;
+    --txt-general-p-color: rgba(255, 255, 255, 0.75); /* white with 75% opacity */
+
+    --txt-general-p-size: 1.3rem;
+    --h3-subtitle-size: 1.5rem;
 
     --nav-height: 75px;
     --nav-clearence: 50px
 
+
+    
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */      
 }
+
+@supports (font-variation-settings: normal) {
+    :root {
+            font-family: 'InterVariable', sans-serif;
+        }
+    }
 
 * {
     box-sizing: border-box;
@@ -27,9 +39,24 @@
 
 body {
     background-color: var(--body-background);
-    padding-top: var(--nav-height);
+    font-family: inherit; /* uses :root's font-family */
+    
 }
 
-html {
-    font-size: 18px;
+.main-container {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: var(--nav-clearence);
+    color: var(--txt-general-p-color);
+}
+
+.about-me-text div h3 {
+    color: var(--text-primary-color);
+    font-size: var(--h3-subtitle-size);
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    margin-bottom: 5rem;
 }
