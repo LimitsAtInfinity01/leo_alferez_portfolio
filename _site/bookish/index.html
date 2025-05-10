@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+      
+    <title></title>
+</head>
+<body>
+
+
+        <nav class="navbar">
+            <svg class="svg-logo" width="225" height="100" xmlns="http://www.w3.org/2000/svg">
+    
+                <!-- Initials -->
+                <a href="/index.html">
+                    <text class="logo" x="50%" y="50%" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333" text-anchor="middle" dominant-baseline="middle">
+                        <!-- &lt; Leo Alferez &gt; -->
+                        { Leo Alferez }
+                    </text>
+                </a>
+              </svg>
+              
+            <ul class="navbar-items">
+                <li><a class="navbar-links" href="/index.html">Home</a></li>
+                <li><a class="navbar-links" href="#">About me</a></li>
+                <li><a class="navbar-links" href="#">Projects</a></li>
+                <li><a class="navbar-links" href="#">Experience</a></li>
+                <li><a class="navbar-links" href="#">Resume</a></li>
+            </ul>
+        </nav>
+
+
+
+    
+<head>
+    <link rel="stylesheet" href="/styles/bookish.css">
+</head>
+
+<main class="bookish-container">
+    <div class="first-column"></div>
+
+    <div class="bookish-card-container">
+        <h1>Project: Bookish</h1>
+
+        <div class="general-card-layout">
+            <header>
+                <h2>What is bookish? 📚</h2>
+            </header>
+            <div class="answer">
+                <h3>Description:</h3>
+                <p>
+                    Bookish is a website designed for book lovers. It helps users find information about books using the Free Library API. 
+                    The site is easy to use and offers a fun way to explore and discover new books.
+                </p>
+                <div class="image-list-container">
+                    <img class="project-image" src="/assets/bookish/bookish_screenshot1.png" alt="">
+                    <div class="list-section">
+                        <h3>Features</h3>
+                        <ul>
+                            <li><span class="li-bold">Search:</span> Searches the catalog of the Open Library to retrieve information about books and their metadata.</li>
+                            <li><span class="li-bold">Review books:</span> Write reviews and share them with other people. Comments to reviews are supported too.</li>
+
+                            <li><span class="li-bold">Profile page:</span> Create a profile page that so users can share their reading lists, see their followers and following, and their reviews</li>
+
+                            <li><span class="li-bold">Reading and favorite lists:</span> Create lists of favorite books as well as a reading list.</li>
+
+                            
+                            <li><span class="li-bold">Posts:</span> Image, video, and text posts are also supported.</li>
+                            <li><span class="li-bold">Follow other users:</span> Follow users and create communities.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="custom-line">            
+            <footer>
+                <p>
+                    Bookish is an intuitive and feature-rich application for book lovers to explore and discover books that match their interests. 
+                    It allows users to search for books by title, author, genre, or keywords, providing detailed information and metadata retrieved from the Open Library API. 
+                    The platform also lets users to create personalized reading lists, write and share reviews, and engage with a community of readers. 
+                </p>
+            </footer>
+        </div>
+
+
+        <div class="general-card-layout">
+            <header>
+                <h2>How was bookish made with? ⚙️</h2>
+            </header>
+            <div class="answer">
+                <h3>Languages and technologies</h3>
+                <p>
+                    Bookish was written in Python, and the Django framework was used to develop the backend. The Django ORM was utilized to interact with the database, enabling efficient and seamless data management. 
+                    The frontend was built using HTML and CSS, ensuring a responsive and user-friendly interface. Additionally, the application integrates with the Open Library API to fetch book data and metadata.
+                    Django's templating engine was used to dynamically generate HTML pages, allowing for seamless integration of backend data with the frontend. 
+                    This made it easier to create reusable components and maintain a consistent design across the application.
+                </p>
+                <h3>Authentication & Media:</h3>
+                <p>
+                        Bookish leverages Django's built-in authentication system to provide secure user login, logout, and registration functionalities. 
+                        This ensures that user data is protected and access to features is personalized. 
+                        Additionally, the application supports file uploads for user avatars and media posts (images and videos) using Django's FileSystemStorage. 
+                        This allows users to customize their profiles and share rich media content seamlessly.
+                </p>
+                <div class="image-list-container">
+                    <img class="project-image" src="/assets/bookish/bookish_screenshot4.png" alt="">                    
+                    <div class="list-section">
+                        <h3>Features</h3>
+                        <ul class="ul-items">
+                            <li><span class="li-bold">Python:</span></li>
+                            <li><span class="li-bold">Django:</span></li>
+                            <li><span class="li-bold">HTML:</span></li>
+                            <li><span class="li-bold">CSS:</span></li>
+                            <li><span class="li-bold">API:</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="custom-line">            
+            <footer>
+                <p>
+                    Bookish is a work in progress that requires improvements in several areas, such as implementing an API wrapper for enhanced search functionality and performance. 
+                    It also needs a redesign and styling updates for pages like the profile page and book results. The project will continue to receive regular updates.
+                </p>
+            </footer>
+        </div>
+
+
+        
+        <div class="general-card-layout">
+            <header>
+                <h2>Who is bookish for? 💁</h2>
+            </header>
+            <div class="answer">
+                <h3>End users</h3>
+                <p>
+                    Bookish is designed for a diverse audience, including readers and book lovers who wish to catalog and share their reading experiences, 
+                    book clubs looking for a centralized platform to discuss and review books, libraries and educators aiming to engage their communities in reading discussions, 
+                    and social learners interested in connecting with others over shared reading preferences. It serves as a versatile tool to foster a love for reading and build 
+                    connections among individuals with similar literary interests.
+                </p>
+                <h3>Other Developers</h3>
+                <p>
+                    Developers would want to use Bookish as a foundation for building their own book-related applications or as a learning resource for understanding how to integrate APIs, manage user authentication, and create dynamic web applications using Django. 
+                    It provides a practical example of combining backend and frontend technologies to deliver a seamless user experience. Additionally, the project demonstrates best practices in organizing code, utilizing Django's ORM, and implementing responsive design.
+                </p>
+                <div>
+                    <img class="project-image" src="/assets/bookish/bookish_screenshot7.png" alt="">
+                </div>
+            </div>
+            <hr class="custom-line">            
+            <footer>
+                <p>
+                </p>
+            </footer>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <div class="last-column"></div>
+</main>
+
+
+</body>
+</html>

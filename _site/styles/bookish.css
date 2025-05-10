@@ -1,0 +1,105 @@
+
+p, li {
+    color: var(--txt-general-p-color);
+}
+
+h1 {
+    color: var(--h1-title-color);
+}
+
+h2 {
+    color: var(--h3-subtitle-color);
+}
+
+.bookish-container {
+    display: grid;
+    grid-template-columns: 1fr 45vw 1fr;
+    margin-top: 4rem;
+}
+
+.first-column {
+    grid-column: 1/2;
+}
+
+.card-column {
+    grid-column: 2/3;
+}
+
+.last-column {
+    grid-column: 3/4;
+}
+
+.bookish-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.general-card-layout {
+    border: solid rgb(11, 171, 211);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.general-card-layout:hover {
+    box-shadow: 0 0 12px 2px #00a3d5;
+}
+
+
+.project-image {
+    max-width: 500px;
+    max-height:fit-content;
+}
+
+
+
+.answer h3 {
+    color: var(--h3-subtitle-color);
+}
+
+
+.custom-line {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    width: 95%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.list-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.list-section li {
+    margin-bottom: 1rem;
+}
+
+.li-bold {
+    color: var(--text-primary-color);
+    font-weight: bolder;
+}
+
+.image-list-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.list-section h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.ul-items {
+    padding-left: 2rem; /* or adjust to your liking */
+    text-align: left;    /* makes sure the list stays left-aligned */
+}

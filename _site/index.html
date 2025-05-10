@@ -16,7 +16,7 @@
             <svg class="svg-logo" width="225" height="100" xmlns="http://www.w3.org/2000/svg">
     
                 <!-- Initials -->
-                <a href="">
+                <a href="/index.html">
                     <text class="logo" x="50%" y="50%" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333" text-anchor="middle" dominant-baseline="middle">
                         <!-- &lt; Leo Alferez &gt; -->
                         { Leo Alferez }
@@ -25,7 +25,7 @@
               </svg>
               
             <ul class="navbar-items">
-                <li><a class="navbar-links" href="#">Home</a></li>
+                <li><a class="navbar-links" href="/index.html">Home</a></li>
                 <li><a class="navbar-links" href="#">About me</a></li>
                 <li><a class="navbar-links" href="#">Projects</a></li>
                 <li><a class="navbar-links" href="#">Experience</a></li>
@@ -39,55 +39,99 @@
 <main class="main-container">
     
         <h1 class="title container">Welcome</h1>
-        <div class="About-me">
-            <div class="about-me-image"></div>
-            <div class="about-me-text">
-                <h2>About me</h2>
-                <div>
-                    <h3 class="">Coding Experience</h3>
-                    <p>
-                        Hello! I'm Leonardo Alferez, an academic librarian with a passion for coding. I have successfully taught myself Python, HTML, CSS, and JavaScript. 
-                        I am developing a full stack web application using Django called <span>Bookish</span>. Which is best described as a social media platform for book lovers.
-                        Other technologies that I love learning are game develompent with Godot and its scripting language GDScript.  
-                    </p>
-                    <h3>Academic Librarian Experience</h3>
-                    <p>
-                        Bilingual (English/Spanish) librarian with a Master of Library Science (4.0 GPA) and a Bachelor's degree in Mathematics.
-                        Experienced in academic and public library services, including reference support, library instruction, program
-                        development, grant writing, and collection development. Skilled in student engagement, technology assistance, database
-                        instruction, and data analysis. Proficient with integrated library systems (Sierra, Alma, Primo), digital platforms (LibGuides,
-                        LibChat), and technologies including web development (HTML, CSS, Python) and MS Office Suite. Dedicated to promoting
-                        information literacy, enhancing library resources, and fostering student success through innovative and inclusive library
-                        services.
-                    </p>
-                </div>
-                <a href=""></a>
+        <div class="section about-me">
+            <h2 class="section-subtitle">Experience</h2>
+            <div class="section-main-continer">
+                <ul class="section-list">
+                    <li>
+                        <h3 class="subsection-subtitle">🖥️ Coding Experience</h3>
+                        <p>
+                            Hello! I'm Leonardo Alferez, an academic librarian with a passion for coding. I have successfully taught myself Python, HTML, CSS, and JavaScript 
+                            to the point that I can develop web applications and write python programs.
+                            <br>
+                            <br> 
+                            Right now, I am developing a full stack web application using Django called <span style="font-weight: bolder;">Bookish</span>. 
+                            Bookish is best described as a social media platform for book lovers.
+                            <br>
+                            <br>
+                            Other technologies that I love learning are game develompent with Godot and GDscript.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="subsection-subtitle"> 📚 Academic Librarian Experience</h3>
+                        <p>
+                            I am a bilingual (English/Spanish) librarian with a Master of Library Science (4.0 GPA) and a Bachelor's degree in Mathematics.
+                            Experienced in academic and public library services, including reference support, library instruction, program
+                            development, grant writing, and collection development. Skilled in student engagement, technology assistance, database
+                            instruction, and data analysis. Proficient with integrated library systems (Sierra, Alma, Primo), digital platforms (LibGuides,
+                            LibChat), and technologies including web development (HTML, CSS, Python) and MS Office Suite. Dedicated to promoting
+                            information literacy, enhancing library resources, and fostering student success through innovative and inclusive library
+                            services.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
+        
 
 
        <div class="projects">
-            <h2>Projects</h2>
+            <h2 class="section-subtitle">Projects</h2>
             <p>Here are some of my projects that I have worked on.</p>
-        <div class="container cards">
-            <div class="card">
-                <div class="card-image-bookish card-image-settings"></div>
-                <div class="card-description">
-                    <div>
-                        <h2 class="card-title">Bookish!</h2>
-                        <span class="mini-icon"></span>
+            <div class="container-cards">
+
+                <a class="card-link" href="/bookish/">
+                    <div class="card">
+                        <div class="card-image-bookish card-image-settings"></div>
+                        <div class="card-description">
+                            <div>
+                                <h2 class="card-title">Bookish!</h2>
+                                <span class="mini-icon"></span>
+                            </div>
+                            <p>Bookish is best thought as a social media for book lovers. Write reviews for your favorite books, share images, videos or a story about the books you love.
+                                As well as create a personal profile to share your favorite books with the world. Follow other readers and see what they are reading, writing or sharing.
+                                <br>
+                                <br>
+                                Bookish is a full-stack web application writtten in Python and developed using the framework Django, HTML, CSS and JavaScript.
+                                You can find the source code in my repository.
+                            </p>
+                            <div class="card-footer">
+                                <p>Placeholder</p>  
+                                <p>Placeholder</p>
+                                <p>Placeholder</p> 
+                            </div>
+                        </div>
                     </div>
-                    <p>Bookish is best thought as a social media for book lovers. Write reviews for your favorite books, share images, videos or a story about the books you love.
-                        As well as create a personal profile to share your favorite books with the world. Follow other readers and see what they are reading, writing or sharing.
-                        Bookish is a web application writtten in Python and developed using the framework Django, HTML, CSS and JavaScript.
-                    </p>
-                    <div class="card-link-footer">
-                        <a href="https://github.com/LimitsAtInfinity01" class="card-link">Placeholder</a>   
-                        <a href="https://github.com/LimitsAtInfinity01" class="card-link">Placeholder</a>
-                        <a href="https://github.com/LimitsAtInfinity01" class="card-link">Placeholder</a>
-                    </div>
-                </div>
+                </a>
+                
+
+
             </div>
-        </div>
+       </div>
+
+       <div class="section skills">
+            <h2 class="section-subtitle">Skills</h2>
+            <p>
+                As a librarian I have aquired and developed many skills that have helped me succeed in my career. Skills such as reference service librarian
+                make me support students in the academic research and thus their success. Participating in committees and collavorating with other librarians, faculty and staff have increased my 
+                interpesonal skills greatly. Providing library instructions to college students have also make my speech and public speaking better as well as my presentation abilities.
+                <br>
+                <br>
+                A love for learning keeps me motivated to pursue my interests and thus learn more skills. That is why I decided to learn to code, web and game develompent after finishing graduate school. 
+                While there is a lot to learn and it feels like I will never finish, I know I can do it and have a fun while doing it.
+            </p>
+            <ul>
+                <h3 id="technical-skills" >🛠️ Technical Skills</h3>
+                <li>Python</li>
+                <li>Django</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Godot</li>
+                <li>Git and GitHub</li>
+            </ul>
+            <p>
+                Python is my to-go language when I have an idea, and that is why I chose Django as my framework for full-stack web develompent.
+            </p>
        </div>
 
 
