@@ -5,7 +5,8 @@
   "main": ".eleventy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eleventy"
+    "serve": "npx eleventy --serve",
+    "build": "env NODE_ENV=production npx eleventy --pathprefix 'eleventy-gh-demo'"
   },
   "keywords": [],
   "author": "",
