@@ -1,0 +1,77 @@
+@import url('./core_style.css');
+@import url('./card_style.css');
+
+body {
+    font-family: inherit; /* uses :root's font-family */
+}
+
+.navbar-container {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+    top: 0px;
+    background-color: var(--body-background);
+    z-index: 5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-items {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+
+.navbar-items li a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+    font-size: 1.2rem;
+}
+
+.navbar-items li a:hover {
+    color: white;
+    border-bottom: solid 2.1px;
+    border-color: white;
+}
+
+
+.svg-logo .logo {
+    fill: var(--logo-color);
+}
+
+.svg-logo .logo:hover {
+    fill: var(--nav-text-color)
+}
+
+.title {
+    color: var(--text-primary-color);
+    font-size: 2rem;
+}
+
+.sample-text {
+    color: var(--txt-general-p-color);
+}
+
+p {
+    font-size: var(--txt-general-p-size);
+    letter-spacing: 0.3px;
+}
+
+.separator {
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    border-width: 0.5px;
+    border: 0;
+    border-top: 2px solid gray
+}
+
+

@@ -1,0 +1,150 @@
+:root {
+    /* Here set up the color variables
+    primary color, textcolor, border-color */
+    --logo-color: #FF5161;
+    --neon-red-glow: #D30302;
+    --nav-text-color: #2dd9fe;
+    --neon-blue-glow: #00a3d5;
+
+    /* --body-background: #050816; */
+    --body-background: rgb(15 23 42);
+    --card-background: #12315a;
+    --element-background: #1c8ca5;
+
+    --text-primary-color: #ffdb4e;
+    --h1-title-color: #ffdb4e;
+    --h2-subtitle-color: #FF5161;
+    --h3-subtitle-color: #ffc300;
+    --txt-secundary-color: #030941;
+    --txt-general-p-color: rgba(255, 255, 255, 0.75); /* white with 75% opacity */
+
+    --txt-general-p-size: 1.3rem;
+    --h2-subtitle-size: 2rem;
+    --h3-subtitle-size: 1.5rem;
+
+    --nav-height: 75px;
+    --nav-clearence: 50px
+
+
+    
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */      
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+            font-family: 'InterVariable', sans-serif;
+        }
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-background);
+    font-family: inherit; /* uses :root's font-family */
+    
+}
+
+.main-container {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: var(--nav-clearence);
+    color: var(--txt-general-p-color);
+}
+
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+h1 {
+    margin-bottom: 5rem;
+}
+
+
+.section-subtitle {
+    color: var(--h2-subtitle-color);
+    font-size: var(--h2-subtitle-size);
+    margin-bottom: 0.5rem;
+}
+
+.subsection-subtitle {
+    color: var(--h3-subtitle-color);
+    font-size: var(--h3-subtitle-size);
+    margin-bottom: 0.5rem;
+}
+
+
+.section-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section-list li {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section {
+    width: 30vw;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.section-main-continer {
+    margin-top: 2.5rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills li {
+    display: inline-flex;
+    align-items: center; /* Aligns the SVG and text vertically */
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: var(--card-background);
+    border-radius: 5px;
+    gap: 0.5rem;
+    color: var(--h3-subtitle-color);
+}
+
+.skills li:hover {
+    background-color: var(--element-background);
+}
+
+#technical-skills {
+    color: var(--h3-subtitle-color);
+    font-size: var(--h3-subtitle-size);
+}
+
+
+.ul-custom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.li-stylized {
+    color: var(--text-primary-color);
+    font-weight: 800;
+    list-style: none;
+    padding: 0.6rem;
+    background-color: var(--card-background);
+    border-radius: 5px;
+}
+
