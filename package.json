@@ -4,7 +4,10 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "deploy": "npm run build && npx gh-pages -d _site -b gh-pages"
+  
   },
   "keywords": [],
   "author": "",
