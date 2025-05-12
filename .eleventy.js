@@ -11,8 +11,5 @@ module.exports = function(eleventyConfig) {
       includes: "_includes",   // Layouts/includes folder
       output: "_site"          // Build output
     },
-
-    // Base path for URLs (project pages)
-    pathPrefix: "/<repo>/"     // ← Move this out here
   };
 };
