@@ -4,7 +4,7 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "build": "env NODE_ENV=production npx eleventy --pathprefix 'LimitsAtInfinity01.github.io",
+    "build": "env NODE_ENV=production npx eleventy --pathprefix='LimitsAtInfinity01.github.io'",
     "serve": "npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy",
     "test": "jest",
@@ -12,5 +12,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
 }

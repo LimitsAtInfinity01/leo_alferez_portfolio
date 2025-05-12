@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
       input: "src",            // Source folder
       includes: "_includes",   // Layouts/includes folder
       output: "_site",          // Build output
-      pathPrefix: "/LimitsAtInfinity01.github.io/"
+      pathPrefix: "LimitsAtInfinity01.github.io"
     },
   };
 };
