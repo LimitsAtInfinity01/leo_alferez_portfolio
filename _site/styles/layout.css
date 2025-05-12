@@ -5,15 +5,20 @@ body {
     font-family: inherit; /* uses :root's font-family */
 }
 
-.navbar {
-    background-color: var(--body-background);  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar-container {
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
+    position: sticky;
+    top: 0px;
+    background-color: var(--body-background);
+    z-index: 5;
+}
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar-items {
@@ -58,3 +63,15 @@ p {
     font-size: var(--txt-general-p-size);
     letter-spacing: 0.3px;
 }
+
+.separator {
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    border-width: 0.5px;
+    border: 0;
+    border-top: 2px solid gray
+}
+
+

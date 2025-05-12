@@ -50,9 +50,12 @@ h2 {
 .project-image {
     max-width: 500px;
     max-height:fit-content;
+    border-radius: 10px;
 }
 
-
+.answer {
+    padding-top: 1rem;
+}
 
 .answer h3 {
     color: var(--h3-subtitle-color);
@@ -102,4 +105,53 @@ h2 {
 .ul-items {
     padding-left: 2rem; /* or adjust to your liking */
     text-align: left;    /* makes sure the list stays left-aligned */
+    justify-content: center;
+}
+
+.cstm-carousel {
+    margin-bottom: 500px;
+    width: 40vw;
+    height: auto;
+    z-index: 0;
+}
+
+.cstm-carousel img {
+    border-radius: 10px;
+    opacity: 90%;
+}
+
+.custom-answer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+
+ .logo {
+    width: 50px;
+ }
+
+ .bookish-card-container > div:first-child {
+    text-align: center;
+ }
+
+ .bookish-card-container > div:first-child > div {
+    display: flex;
+    align-items: center;
+ }
+
+
+ .bookish-card-container > div:first-child a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    color: var(--nav-text-color);
+}
+
+.bookish-card-container > div:first-child a:hover {
+    color: white;
 }

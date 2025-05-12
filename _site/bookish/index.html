@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/styles/layout.css">
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-      
     <title></title>
 </head>
 <body>
 
 
+    <div class="navbar-container">
         <nav class="navbar">
             <svg class="svg-logo" width="225" height="100" xmlns="http://www.w3.org/2000/svg">
     
@@ -26,14 +28,14 @@
               
             <ul class="navbar-items">
                 <li><a class="navbar-links" href="/index.html">Home</a></li>
-                <li><a class="navbar-links" href="#">About me</a></li>
-                <li><a class="navbar-links" href="#">Projects</a></li>
-                <li><a class="navbar-links" href="#">Experience</a></li>
-                <li><a class="navbar-links" href="#">Resume</a></li>
+                <li> <a class="card-link" href="/bookish/">Current Project</a></li>
+                <li><a class="navbar-links" href="/assets/ALFEREZ_05_11_2025_.pdf" target="_blank">Resume</a></li>
             </ul>
+            
         </nav>
-
-
+        <hr class="separator">
+    </div>
+       
 
     
 <head>
@@ -41,10 +43,18 @@
 </head>
 
 <main class="bookish-container">
-    <div class="first-column"></div>
+    <div class="first-column">
+    </div>
 
     <div class="bookish-card-container">
-        <h1>Project: Bookish</h1>
+        <div>
+            <h1>Bookish</h1>
+           <div>
+                <img class="logo" src="/assets/github-mark-white.png" alt="">
+                <a href="https://github.com/LimitsAtInfinity01/django_book_search_app/tree/master" target="_blank">Project's Repository</a>
+           </div>
+        </div>
+ 
 
         <div class="general-card-layout">
             <header>
@@ -57,18 +67,14 @@
                     The site is easy to use and offers a fun way to explore and discover new books.
                 </p>
                 <div class="image-list-container">
-                    <img class="project-image" src="/assets/bookish/bookish_screenshot1.png" alt="">
+                    <img class="project-image" src="/assets/bookish/bookishh_screenshot1.png" alt="">
                     <div class="list-section">
                         <h3>Features</h3>
                         <ul>
                             <li><span class="li-bold">Search:</span> Searches the catalog of the Open Library to retrieve information about books and their metadata.</li>
                             <li><span class="li-bold">Review books:</span> Write reviews and share them with other people. Comments to reviews are supported too.</li>
-
                             <li><span class="li-bold">Profile page:</span> Create a profile page that so users can share their reading lists, see their followers and following, and their reviews</li>
-
                             <li><span class="li-bold">Reading and favorite lists:</span> Create lists of favorite books as well as a reading list.</li>
-
-                            
                             <li><span class="li-bold">Posts:</span> Image, video, and text posts are also supported.</li>
                             <li><span class="li-bold">Follow other users:</span> Follow users and create communities.</li>
                         </ul>
@@ -88,7 +94,7 @@
 
         <div class="general-card-layout">
             <header>
-                <h2>How was bookish made with? ⚙️</h2>
+                <h2>How was bookish made? ⚙️</h2>
             </header>
             <div class="answer">
                 <h3>Languages and technologies</h3>
@@ -106,15 +112,15 @@
                         This allows users to customize their profiles and share rich media content seamlessly.
                 </p>
                 <div class="image-list-container">
-                    <img class="project-image" src="/assets/bookish/bookish_screenshot4.png" alt="">                    
+                    <img class="project-image" src="/assets/bookish/bookishh_screenshot2.png" alt="">                    
                     <div class="list-section">
-                        <h3>Features</h3>
-                        <ul class="ul-items">
-                            <li><span class="li-bold">Python:</span></li>
-                            <li><span class="li-bold">Django:</span></li>
-                            <li><span class="li-bold">HTML:</span></li>
-                            <li><span class="li-bold">CSS:</span></li>
-                            <li><span class="li-bold">API:</span></li>
+                        <h3>Technologies</h3>
+                        <ul class="ul-items ul-custom">
+                            <li class="li-stylized">Python</li>
+                            <li class="li-stylized">Django</li>
+                            <li class="li-stylized">HTML</li>
+                            <li class="li-stylized">CSS</li>
+                            <li class="li-stylized">API</li>
                         </ul>
                     </div>
                 </div>
@@ -134,22 +140,22 @@
             <header>
                 <h2>Who is bookish for? 💁</h2>
             </header>
-            <div class="answer">
-                <h3>End users</h3>
-                <p>
-                    Bookish is designed for a diverse audience, including readers and book lovers who wish to catalog and share their reading experiences, 
-                    book clubs looking for a centralized platform to discuss and review books, libraries and educators aiming to engage their communities in reading discussions, 
-                    and social learners interested in connecting with others over shared reading preferences. It serves as a versatile tool to foster a love for reading and build 
-                    connections among individuals with similar literary interests.
-                </p>
-                <h3>Other Developers</h3>
-                <p>
-                    Developers would want to use Bookish as a foundation for building their own book-related applications or as a learning resource for understanding how to integrate APIs, manage user authentication, and create dynamic web applications using Django. 
-                    It provides a practical example of combining backend and frontend technologies to deliver a seamless user experience. Additionally, the project demonstrates best practices in organizing code, utilizing Django's ORM, and implementing responsive design.
-                </p>
+            <div class="answer custom-answer">
                 <div>
-                    <img class="project-image" src="/assets/bookish/bookish_screenshot7.png" alt="">
+                    <h3>End users</h3>
+                    <p>
+                        Bookish is designed for a diverse audience, including readers and book lovers who wish to catalog and share their reading experiences, 
+                        book clubs looking for a centralized platform to discuss and review books, libraries and educators aiming to engage their communities in reading discussions, 
+                        and social learners interested in connecting with others over shared reading preferences. It serves as a versatile tool to foster a love for reading and build 
+                        connections among individuals with similar literary interests.
+                    </p>
+                    <h3>Other Developers</h3>
+                    <p>
+                        Developers would want to use Bookish as a foundation for building their own book-related applications or as a learning resource for understanding how to integrate APIs, manage user authentication, and create dynamic web applications using Django. 
+                        It provides a practical example of combining backend and frontend technologies to deliver a seamless user experience. Additionally, the project demonstrates best practices in organizing code, utilizing Django's ORM, and implementing responsive design.
+                    </p>
                 </div>
+                <img class="project-image" src="/assets/bookish/bookishh_screenshot5.png" alt="">
             </div>
             <hr class="custom-line">            
             <footer>
@@ -158,14 +164,199 @@
             </footer>
         </div>
 
-
-
-
+        <div id="carouselExampleDark" class="carousel carousel-dark slide cstm-carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1">
+                </button>
+              
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="1"
+                  class=""
+                  aria-current=""
+                  aria-label="Slide 2">
+                </button>
+              
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="2"
+                  class=""
+                  aria-current=""
+                  aria-label="Slide 3">
+                </button>
+              
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="3"
+                  class=""
+                  aria-current=""
+                  aria-label="Slide 4">
+                </button>
+              
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="4"
+                  class=""
+                  aria-current=""
+                  aria-label="Slide 5">
+                </button>
+              
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="5"
+                  class=""
+                  aria-current=""
+                  aria-label="Slide 6">
+                </button>
+              
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="6"
+                  class=""
+                  aria-current=""
+                  aria-label="Slide 7">
+                </button>
+              
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="7"
+                  class=""
+                  aria-current=""
+                  aria-label="Slide 8">
+                </button>
+              
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="8"
+                  class=""
+                  aria-current=""
+                  aria-label="Slide 9">
+                </button>
+              
+            </div>
+          
+            <div class="carousel-inner">
+              
+               
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="/assets/bookish/bookishh_screenshot1.png" class="d-block w-100" alt="Slide 1">
+                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Slide 1 label</h5>
+                        <p>Some representative placeholder content for slide 1.</p> -->
+                        </div>
+                    </div>
+               
+              
+               
+                    <div class="carousel-item " data-bs-interval="5000">
+                        <img src="/assets/bookish/bookishh_screenshot2.png" class="d-block w-100" alt="Slide 2">
+                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Slide 2 label</h5>
+                        <p>Some representative placeholder content for slide 2.</p> -->
+                        </div>
+                    </div>
+               
+              
+               
+                    <div class="carousel-item " data-bs-interval="5000">
+                        <img src="/assets/bookish/bookishh_screenshot3.png" class="d-block w-100" alt="Slide 3">
+                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Slide 3 label</h5>
+                        <p>Some representative placeholder content for slide 3.</p> -->
+                        </div>
+                    </div>
+               
+              
+               
+              
+               
+                    <div class="carousel-item " data-bs-interval="5000">
+                        <img src="/assets/bookish/bookishh_screenshot5.png" class="d-block w-100" alt="Slide 5">
+                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Slide 5 label</h5>
+                        <p>Some representative placeholder content for slide 5.</p> -->
+                        </div>
+                    </div>
+               
+              
+               
+                    <div class="carousel-item " data-bs-interval="5000">
+                        <img src="/assets/bookish/bookishh_screenshot6.png" class="d-block w-100" alt="Slide 6">
+                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Slide 6 label</h5>
+                        <p>Some representative placeholder content for slide 6.</p> -->
+                        </div>
+                    </div>
+               
+              
+               
+                    <div class="carousel-item " data-bs-interval="5000">
+                        <img src="/assets/bookish/bookishh_screenshot7.png" class="d-block w-100" alt="Slide 7">
+                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Slide 7 label</h5>
+                        <p>Some representative placeholder content for slide 7.</p> -->
+                        </div>
+                    </div>
+               
+              
+               
+                    <div class="carousel-item " data-bs-interval="5000">
+                        <img src="/assets/bookish/bookishh_screenshot8.png" class="d-block w-100" alt="Slide 8">
+                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Slide 8 label</h5>
+                        <p>Some representative placeholder content for slide 8.</p> -->
+                        </div>
+                    </div>
+               
+              
+               
+                    <div class="carousel-item " data-bs-interval="5000">
+                        <img src="/assets/bookish/bookishh_screenshot9.png" class="d-block w-100" alt="Slide 9">
+                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Slide 9 label</h5>
+                        <p>Some representative placeholder content for slide 9.</p> -->
+                        </div>
+                    </div>
+               
+              
+               
+                    <div class="carousel-item " data-bs-interval="5000">
+                        <img src="/assets/bookish/bookishh_screenshot10.png" class="d-block w-100" alt="Slide 10">
+                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Slide 10 label</h5>
+                        <p>Some representative placeholder content for slide 10.</p> -->
+                        </div>
+                    </div>
+               
+              
+            </div>
+          
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
     </div>
-
-
-
 
     <div class="last-column"></div>
 </main>

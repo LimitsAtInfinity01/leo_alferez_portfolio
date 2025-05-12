@@ -8,10 +8,18 @@ layout: layout.njk
 </head>
 
 <main class="bookish-container">
-    <div class="first-column"></div>
+    <div class="first-column">
+    </div>
 
     <div class="bookish-card-container">
-        <h1>Project: Bookish</h1>
+        <div>
+            <h1>Bookish</h1>
+           <div>
+                <img class="logo" src="/assets/github-mark-white.png" alt="">
+                <a href="https://github.com/LimitsAtInfinity01/django_book_search_app/tree/master" target="_blank">Project's Repository</a>
+           </div>
+        </div>
+ 
 
         <div class="general-card-layout">
             <header>
@@ -24,18 +32,14 @@ layout: layout.njk
                     The site is easy to use and offers a fun way to explore and discover new books.
                 </p>
                 <div class="image-list-container">
-                    <img class="project-image" src="/assets/bookish/bookish_screenshot1.png" alt="">
+                    <img class="project-image" src="/assets/bookish/bookishh_screenshot1.png" alt="">
                     <div class="list-section">
                         <h3>Features</h3>
                         <ul>
                             <li><span class="li-bold">Search:</span> Searches the catalog of the Open Library to retrieve information about books and their metadata.</li>
                             <li><span class="li-bold">Review books:</span> Write reviews and share them with other people. Comments to reviews are supported too.</li>
-
                             <li><span class="li-bold">Profile page:</span> Create a profile page that so users can share their reading lists, see their followers and following, and their reviews</li>
-
                             <li><span class="li-bold">Reading and favorite lists:</span> Create lists of favorite books as well as a reading list.</li>
-
-                            
                             <li><span class="li-bold">Posts:</span> Image, video, and text posts are also supported.</li>
                             <li><span class="li-bold">Follow other users:</span> Follow users and create communities.</li>
                         </ul>
@@ -55,7 +59,7 @@ layout: layout.njk
 
         <div class="general-card-layout">
             <header>
-                <h2>How was bookish made with? ⚙️</h2>
+                <h2>How was bookish made? ⚙️</h2>
             </header>
             <div class="answer">
                 <h3>Languages and technologies</h3>
@@ -73,15 +77,15 @@ layout: layout.njk
                         This allows users to customize their profiles and share rich media content seamlessly.
                 </p>
                 <div class="image-list-container">
-                    <img class="project-image" src="/assets/bookish/bookish_screenshot4.png" alt="">                    
+                    <img class="project-image" src="/assets/bookish/bookishh_screenshot2.png" alt="">                    
                     <div class="list-section">
-                        <h3>Features</h3>
-                        <ul class="ul-items">
-                            <li><span class="li-bold">Python:</span></li>
-                            <li><span class="li-bold">Django:</span></li>
-                            <li><span class="li-bold">HTML:</span></li>
-                            <li><span class="li-bold">CSS:</span></li>
-                            <li><span class="li-bold">API:</span></li>
+                        <h3>Technologies</h3>
+                        <ul class="ul-items ul-custom">
+                            <li class="li-stylized">Python</li>
+                            <li class="li-stylized">Django</li>
+                            <li class="li-stylized">HTML</li>
+                            <li class="li-stylized">CSS</li>
+                            <li class="li-stylized">API</li>
                         </ul>
                     </div>
                 </div>
@@ -101,22 +105,22 @@ layout: layout.njk
             <header>
                 <h2>Who is bookish for? 💁</h2>
             </header>
-            <div class="answer">
-                <h3>End users</h3>
-                <p>
-                    Bookish is designed for a diverse audience, including readers and book lovers who wish to catalog and share their reading experiences, 
-                    book clubs looking for a centralized platform to discuss and review books, libraries and educators aiming to engage their communities in reading discussions, 
-                    and social learners interested in connecting with others over shared reading preferences. It serves as a versatile tool to foster a love for reading and build 
-                    connections among individuals with similar literary interests.
-                </p>
-                <h3>Other Developers</h3>
-                <p>
-                    Developers would want to use Bookish as a foundation for building their own book-related applications or as a learning resource for understanding how to integrate APIs, manage user authentication, and create dynamic web applications using Django. 
-                    It provides a practical example of combining backend and frontend technologies to deliver a seamless user experience. Additionally, the project demonstrates best practices in organizing code, utilizing Django's ORM, and implementing responsive design.
-                </p>
+            <div class="answer custom-answer">
                 <div>
-                    <img class="project-image" src="/assets/bookish/bookish_screenshot7.png" alt="">
+                    <h3>End users</h3>
+                    <p>
+                        Bookish is designed for a diverse audience, including readers and book lovers who wish to catalog and share their reading experiences, 
+                        book clubs looking for a centralized platform to discuss and review books, libraries and educators aiming to engage their communities in reading discussions, 
+                        and social learners interested in connecting with others over shared reading preferences. It serves as a versatile tool to foster a love for reading and build 
+                        connections among individuals with similar literary interests.
+                    </p>
+                    <h3>Other Developers</h3>
+                    <p>
+                        Developers would want to use Bookish as a foundation for building their own book-related applications or as a learning resource for understanding how to integrate APIs, manage user authentication, and create dynamic web applications using Django. 
+                        It provides a practical example of combining backend and frontend technologies to deliver a seamless user experience. Additionally, the project demonstrates best practices in organizing code, utilizing Django's ORM, and implementing responsive design.
+                    </p>
                 </div>
+                <img class="project-image" src="/assets/bookish/bookishh_screenshot5.png" alt="">
             </div>
             <hr class="custom-line">            
             <footer>
@@ -125,14 +129,45 @@ layout: layout.njk
             </footer>
         </div>
 
-
-
-
+        <div id="carouselExampleDark" class="carousel carousel-dark slide cstm-carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              {% for i in range(0, 9) %}
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="{{ i }}"
+                  class="{% if i == 0 %}active{% endif %}"
+                  aria-current="{% if i == 0 %}true{% endif %}"
+                  aria-label="Slide {{ i + 1 }}">
+                </button>
+              {% endfor %}
+            </div>
+          
+            <div class="carousel-inner">
+              {% for i in range(1, 11) %}
+               {% if i != 4 %}
+                    <div class="carousel-item {% if i == 1 %}active{% endif %}" data-bs-interval="5000">
+                        <img src="/assets/bookish/bookishh_screenshot{{ i }}.png" class="d-block w-100" alt="Slide {{ i }}">
+                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Slide {{ i }} label</h5>
+                        <p>Some representative placeholder content for slide {{ i }}.</p> -->
+                        </div>
+                    </div>
+               {% endif %}
+              {% endfor %}
+            </div>
+          
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
     </div>
-
-
-
 
     <div class="last-column"></div>
 </main>
