@@ -10,7 +10,7 @@
 }
 
 .card:hover {
-    box-shadow: 10 10 20px 20px #ece9e991;
+    box-shadow: 0 0 12px 2px #00a3d5;
 }
 
 .card-image-bookish {
@@ -76,6 +76,6 @@
 @media (max-width: 35rem) {
     .card {
         max-width: 350px;
+        box-shadow: 0 0 12px 2px #00a3d5;
     }
-
 }
