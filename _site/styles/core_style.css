@@ -19,6 +19,7 @@
     --txt-general-p-color: rgba(255, 255, 255, 0.75); /* white with 75% opacity */
 
     --txt-general-p-size: 1.3rem;
+    --h1-text-size: 3rem;
     --h2-subtitle-size: 2rem;
     --h3-subtitle-size: 1.5rem;
 
@@ -39,6 +40,17 @@
 
 * {
     box-sizing: border-box;
+}
+
+
+h1 {
+    background: #FCEABB;
+    background: linear-gradient(to right, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: var(--h1-text-size);
 }
 
 body {
@@ -156,6 +168,7 @@ body {
         width: auto;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        padding-bottom: 1rem;
     }
 
     .section {
