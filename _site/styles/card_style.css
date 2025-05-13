@@ -73,14 +73,9 @@
     font-size: 1rem;
 }
 
-@media (width < 50rem) {
+@media (max-width: 35rem) {
     .card {
-        /* padding: 1rem;
-        margin: 0; */
-        overflow: hidden;
+        max-width: 350px;
     }
 
-    .card-description p {
-        font-size: 0.7rem;
-    }
 }

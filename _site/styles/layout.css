@@ -75,3 +75,26 @@ p {
 }
 
 
+@media (max-width: 35rem) {
+    
+    .navbar {
+        justify-content: space-evenly;
+    }
+
+    .svg-logo {
+        display: none;
+    }
+
+    .navbar-container {
+        width: auto;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .navbar-items {
+        gap: 2.5rem;
+    }
+
+}
