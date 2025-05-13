@@ -10,7 +10,7 @@
 }
 
 .card:hover {
-    box-shadow: 0 0 12px 2px #00a3d5;
+    box-shadow: 10 10 20px 20px #ece9e991;
 }
 
 .card-image-bookish {
