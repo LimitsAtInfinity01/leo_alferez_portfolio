@@ -49,7 +49,6 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
     font-size: var(--h1-text-size);
 }
 
@@ -71,6 +70,8 @@ body {
 .container-cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
 }
 
 
@@ -177,5 +178,6 @@ body {
 
     h1 {
         text-align: center;
+        font-size: 2rem;
     }
 }
